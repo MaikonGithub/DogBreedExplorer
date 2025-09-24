@@ -18,19 +18,24 @@ App iOS nativo em SwiftUI que consome a Dog CEO API para listar raças de cães 
 - macOS 12.0+, Xcode 14.0+, iOS 15.0+
 
 ### Comandos
+```
 git clone <repository-url>
 cd DogBreedExplorer
 open DogBreedExplorer.xcodeproj
 Cmd + R
+```
 
 ### Testes
+```
 Cmd + U
 # ou
 xcodebuild test -scheme DogBreedExplorer -destination 'platform=iOS Simulator,name=iPhone 14 Pro'
+```
 
 ## 🏗️ Arquitetura
 
 ### Clean Architecture + MVVM
+```
 ┌─────────────────────────────────────┐
 │           Presentation Layer        │
 │  ┌─────────────┐  ┌─────────────┐  │
@@ -47,6 +52,7 @@ xcodebuild test -scheme DogBreedExplorer -destination 'platform=iOS Simulator,na
 │  │   Network   │  │    Cache    │  │
 │  └─────────────┘  └─────────────┘  │
 └─────────────────────────────────────┘
+```
 
 ### Decisões Técnicas
 
@@ -63,6 +69,7 @@ xcodebuild test -scheme DogBreedExplorer -destination 'platform=iOS Simulator,na
 - **Mocks**: Simulação de dependências
 
 ### Arquivos
+```
 DogBreedExplorerTests/
 ├── DogBreedExplorerTests.swift          # ViewModel principal
 ├── BreedDetailViewModelTests.swift      # ViewModel detalhes
@@ -71,6 +78,7 @@ DogBreedExplorerTests/
 ├── BreedRepositoryTests.swift           # Repository
 ├── ModelTests.swift                     # Modelos
 └── TestHelpers.swift                    # Utilitários
+```
 
 ## 📊 Qualidade
 
@@ -149,19 +157,24 @@ Native iOS app in SwiftUI that consumes Dog CEO API to list dog breeds and displ
 - macOS 12.0+, Xcode 14.0+, iOS 15.0+
 
 ### Commands
+```
 git clone <repository-url>
 cd DogBreedExplorer
 open DogBreedExplorer.xcodeproj
 Cmd + R
+```
 
 ### Tests
+```
 Cmd + U
 # or
 xcodebuild test -scheme DogBreedExplorer -destination 'platform=iOS Simulator,name=iPhone 14 Pro'
+```
 
 ## 🏗️ Architecture
 
 ### Clean Architecture + MVVM
+```
 ┌─────────────────────────────────────┐
 │           Presentation Layer        │
 │  ┌─────────────┐  ┌─────────────┐  │
@@ -178,6 +191,7 @@ xcodebuild test -scheme DogBreedExplorer -destination 'platform=iOS Simulator,na
 │  │   Network   │  │    Cache    │  │
 │  └─────────────┘  └─────────────┘  │
 └─────────────────────────────────────┘
+```
 
 ### Technical Decisions
 
@@ -194,6 +208,7 @@ xcodebuild test -scheme DogBreedExplorer -destination 'platform=iOS Simulator,na
 - **Mocks**: Dependency simulation
 
 ### Files
+```
 DogBreedExplorerTests/
 ├── DogBreedExplorerTests.swift          # Main ViewModel
 ├── BreedDetailViewModelTests.swift      # Detail ViewModel
@@ -202,6 +217,7 @@ DogBreedExplorerTests/
 ├── BreedRepositoryTests.swift           # Repository
 ├── ModelTests.swift                     # Models
 └── TestHelpers.swift                    # Utilities
+```
 
 ## 📊 Quality
 
